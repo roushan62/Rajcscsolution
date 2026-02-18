@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC Digital Seva Kendra - Authorized CSC VLE Center</title>
+    <title>Raj Enterprises - Premium CSC Digital Seva Center | Authorized Common Service Center</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,1722 +12,1360 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         * {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        /* ==================== CUSTOM VARIABLES ==================== */
-        :root {
-            --primary-blue: #1e40af;
-            --dark-blue: #1e3a8a;
-            --secondary-orange: #ea580c;
-            --light-orange: #f97316;
-            --white: #ffffff;
-            --light-gray: #f3f4f6;
-            --dark-gray: #333333;
-            --border-gray: #e5e7eb;
-        }
-        
-        /* ==================== GLOBAL STYLES ==================== */
-        body {
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-            background-color: var(--white);
-            color: var(--dark-gray);
-        }
-        
-        /* ==================== HEADER/NAVIGATION ==================== */
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 12px 0;
-        }
-        
-        .header-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-        }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex: 0 0 auto;
-        }
-        
-        .shop-logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-orange) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-        
-        .header-center {
-            flex: 1;
-            text-align: center;
-        }
-        
-        .shop-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin: 0;
-        }
-        
-        .shop-tagline {
-            font-size: 0.75rem;
-            color: var(--secondary-orange);
-            font-weight: 600;
-            margin: 0;
-        }
-        
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex: 0 0 auto;
-        }
-        
-        .csc-badge {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 25px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 2px 10px rgba(30, 64, 175, 0.2);
-        }
-        
-        .csc-badge i {
-            color: var(--secondary-orange);
-        }
-        
-        /* ==================== NAVIGATION ==================== */
-        nav {
-            display: flex;
-            gap: 40px;
-            list-style: none;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        
-        nav a {
-            color: var(--dark-gray);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
+
+        :root {
+            --navy-blue: #0b3d91;
+            --navy-dark: #052654;
+            --navy-light: #1555c0;
+            --ash-white: #f8f9fb;
+            --gov-green: #1b7c4d;
+            --gov-green-light: #2ba861;
+            --orange-accent: #e67e22;
+            --orange-light: #f39c12;
+            --light-gray: #e8edf5;
+            --border-color: #d1d9e8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--ash-white) 0%, #f0f4fb 100%);
+            color: #1a202c;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        /* SCROLLBAR STYLING */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--ash-white);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--navy-blue);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--navy-dark);
+        }
+
+        /* GRADIENT UTILITIES */
+        .gradient-navy-blue {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-dark) 100%);
+        }
+
+        .gradient-green {
+            background: linear-gradient(135deg, var(--gov-green) 0%, var(--gov-green-light) 100%);
+        }
+
+        .gradient-orange {
+            background: linear-gradient(135deg, var(--orange-accent) 0%, var(--orange-light) 100%);
+        }
+
+        /* GLASSMORPHISM EFFECT */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+        }
+
+        .glass-dark {
+            background: rgba(11, 61, 145, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(11, 61, 145, 0.1);
+        }
+
+        /* ANIMATIONS */
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(230, 126, 34, 0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-slide-in-down {
+            animation: slideInDown 0.8s ease-out;
+        }
+
+        .animate-slide-in-up {
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* PREMIUM HEADER */
+        .premium-header {
+            background: white;
+            border-bottom: 1px solid var(--light-gray);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 20px rgba(11, 61, 145, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .premium-header .nav-link {
             position: relative;
-            transition: all 0.3s ease;
+            color: #1a202c;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
-        
-        nav a:hover {
-            color: var(--primary-blue);
-        }
-        
-        nav a::after {
+
+        .premium-header .nav-link::after {
             content: '';
             position: absolute;
-            bottom: -5px;
-            left: 0;
             width: 0;
-            height: 2px;
-            background: var(--secondary-orange);
+            height: 3px;
+            bottom: -8px;
+            left: 0;
+            background: var(--navy-blue);
             transition: width 0.3s ease;
+            border-radius: 2px;
         }
-        
-        nav a:hover::after {
+
+        .premium-header .nav-link:hover::after {
             width: 100%;
         }
-        
-        /* ==================== HERO SECTION ==================== */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 50%, var(--secondary-orange) 100%);
+
+        /* CSC BADGE */
+        .csc-badge {
+            background: linear-gradient(135deg, var(--orange-accent) 0%, var(--orange-light) 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+            animation: pulse-glow 2s infinite;
+        }
+
+        .csc-id-badge {
+            background: white;
+            border: 2px solid var(--navy-blue);
+            color: var(--navy-blue);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(11, 61, 145, 0.1);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            background: linear-gradient(135deg, white 0%, var(--ash-white) 100%);
             position: relative;
             overflow: hidden;
         }
-        
-        .hero::before {
+
+        .hero-section::before {
             content: '';
             position: absolute;
             top: -50%;
             right: -10%;
-            width: 500px;
-            height: 500px;
-            background: rgba(255, 255, 255, 0.08);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(230, 126, 34, 0.1) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
+            pointer-events: none;
         }
-        
-        .hero::after {
+
+        .hero-section::after {
             content: '';
             position: absolute;
             bottom: -30%;
             left: -5%;
             width: 400px;
             height: 400px;
-            background: rgba(255, 255, 255, 0.05);
+            background: radial-gradient(circle, rgba(11, 61, 145, 0.08) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 8s ease-in-out infinite reverse;
+            pointer-events: none;
         }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(20px); }
-        }
-        
-        .hero-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 10;
-        }
-        
-        .hero-left {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .hero-right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .owner-profile {
+
+        .profile-image {
             width: 280px;
             height: 280px;
-            border-radius: 50%;
-            border: 8px solid rgba(255, 255, 255, 0.3);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2),
-                        inset 0 0 30px rgba(255, 255, 255, 0.1);
-            animation: slideInRight 0.8s ease;
+            border-radius: 20px;
+            border: 6px solid white;
+            box-shadow: 0 20px 60px rgba(11, 61, 145, 0.2);
+            object-fit: cover;
+            animation: float 3.5s ease-in-out infinite;
         }
-        
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin: 0;
-            animation: slideInLeft 0.8s ease;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            opacity: 0.95;
-            margin: 0;
-            animation: slideInLeft 0.8s ease 0.1s backwards;
-        }
-        
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
-        .hero-meta {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            animation: slideInLeft 0.8s ease 0.2s backwards;
-        }
-        
-        .meta-badge {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 12px 20px;
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            font-size: 0.95rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .meta-badge i {
-            font-size: 1.2rem;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            animation: slideInLeft 0.8s ease 0.3s backwards;
-        }
-        
-        .btn-primary, .btn-secondary {
+
+        /* PREMIUM BUTTONS */
+        .btn-premium {
+            position: relative;
             padding: 14px 32px;
-            border-radius: 50px;
-            font-size: 1rem;
             font-weight: 600;
+            font-size: 15px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
+            transition: all 0.3s ease;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            font-family: 'Poppins', sans-serif;
+            gap: 8px;
+            overflow: hidden;
         }
-        
+
+        .btn-premium::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-premium:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
         .btn-primary {
-            background: white;
-            color: var(--primary-blue);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn-secondary {
-            background: var(--secondary-orange);
+            background: var(--navy-blue);
             color: white;
-            border: 2px solid white;
         }
-        
-        .btn-secondary:hover {
-            background: rgba(234, 88, 12, 0.9);
+
+        .btn-primary:hover {
+            background: var(--navy-dark);
             transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(11, 61, 145, 0.3);
         }
-        
-        /* ==================== SECTIONS ==================== */
-        section {
-            padding: 80px 20px;
-            max-width: 1400px;
-            margin: 0 auto;
+
+        .btn-secondary {
+            background: var(--gov-green);
+            color: white;
         }
-        
-        section h2 {
-            font-size: 2.8rem;
+
+        .btn-secondary:hover {
+            background: var(--gov-green-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(27, 124, 77, 0.3);
+        }
+
+        .btn-orange {
+            background: var(--orange-accent);
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: var(--orange-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(230, 126, 34, 0.3);
+        }
+
+        /* SECTION HEADING */
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            font-size: 42px;
             font-weight: 800;
-            color: var(--primary-blue);
-            text-align: center;
-            margin-bottom: 20px;
+            color: var(--navy-blue);
+            letter-spacing: -1px;
         }
-        
-        section .section-subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.1rem;
-            margin-bottom: 60px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 80px;
+            height: 6px;
+            background: var(--orange-accent);
+            border-radius: 3px;
         }
-        
-        /* ==================== SERVICES SECTION ==================== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        @media (min-width: 1024px) {
-            .services-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        
-        @media (min-width: 768px) and (max-width: 1023px) {
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        @media (max-width: 767px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-        }
-        
+
+        /* PREMIUM SERVICE CARD */
         .service-card {
             background: white;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: all 0.4s ease;
-            border: 1px solid var(--border-gray);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            padding: 32px 24px;
+            border: 1px solid var(--light-gray);
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            height: 100%;
             display: flex;
             flex-direction: column;
+            height: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--navy-blue), var(--orange-accent));
+            transition: all 0.3s ease;
+        }
+
+        .service-card::after {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-orange) 100%);
-            opacity: 0;
-            z-index: -1;
-            transition: left 0.4s ease;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
         }
-        
+
         .service-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 20px 40px rgba(30, 64, 175, 0.2);
-            border-color: var(--secondary-orange);
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(11, 61, 145, 0.15);
+            border-color: var(--navy-blue);
         }
-        
-        .service-card:hover::before {
-            left: 0;
-            opacity: 0.08;
+
+        .service-card:hover::after {
+            left: 100%;
         }
-        
+
         .service-logo {
-            height: 90px;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 100%);
-            border-radius: 15px;
-            transition: all 0.4s ease;
-            position: relative;
-        }
-        
-        .service-card:hover .service-logo {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-orange) 100%);
-            transform: scale(1.1) rotate(-5deg);
-        }
-        
-        .service-logo img {
-            max-height: 80px;
-            max-width: 80px;
+            height: 50px;
+            width: 100%;
             object-fit: contain;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+            margin-bottom: 16px;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
         }
-        
-        .service-logo i {
-            font-size: 2.5rem;
-            color: var(--primary-blue);
-            transition: all 0.4s ease;
-        }
-        
-        .service-card:hover .service-logo i {
-            color: white;
-        }
-        
-        .service-title {
-            font-size: 1.2rem;
+
+        .service-card h4 {
+            font-size: 18px;
             font-weight: 700;
-            color: var(--primary-blue);
-            margin: 15px 0 12px 0;
-            transition: all 0.3s ease;
+            color: var(--navy-blue);
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
-        
-        .service-card:hover .service-title {
-            color: var(--secondary-orange);
-        }
-        
-        .service-features {
-            color: #666;
-            font-size: 0.9rem;
-            line-height: 1.6;
+
+        .service-card ul {
+            list-style: none;
             flex-grow: 1;
-            text-align: left;
         }
-        
-        .service-features li {
-            list-style: none;
-            padding: 5px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .service-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary-orange);
-            font-weight: bold;
-        }
-        
-        /* ==================== WHY CHOOSE US ==================== */
-        .why-choose {
-            background: linear-gradient(135deg, var(--light-gray) 0%, #fef3c7 100%);
-            border-radius: 20px;
-            padding: 50px 40px;
-            margin-bottom: 40px;
-        }
-        
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .why-item {
-            text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-            transition: all 0.3s ease;
-        }
-        
-        .why-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(30, 64, 175, 0.15);
-        }
-        
-        .why-icon {
-            font-size: 3rem;
-            color: var(--secondary-orange);
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }
-        
-        .why-item:hover .why-icon {
-            transform: scale(1.2) rotate(10deg);
-        }
-        
-        .why-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--primary-blue);
+
+        .service-card li {
+            font-size: 14px;
+            color: #4a5568;
             margin-bottom: 10px;
-        }
-        
-        .why-description {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        /* ==================== ABOUT SECTION ==================== */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        
-        @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-        }
-        
-        .about-text h3 {
-            font-size: 2rem;
-            color: var(--primary-blue);
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        
-        .about-text p {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 18px;
-            font-size: 1.05rem;
-        }
-        
-        .about-features {
-            list-style: none;
-            margin-top: 25px;
-        }
-        
-        .about-features li {
-            color: #333;
-            margin-bottom: 15px;
-            padding-left: 35px;
-            position: relative;
-            font-weight: 500;
-        }
-        
-        .about-features li::before {
-            content: '★';
-            position: absolute;
-            left: 0;
-            color: var(--secondary-orange);
-            font-size: 1.5rem;
-        }
-        
-        .about-image {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-orange) 100%);
-            border-radius: 20px;
-            padding: 50px 40px;
-            text-align: center;
-            color: white;
-            min-height: 400px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            box-shadow: 0 20px 50px rgba(30, 64, 175, 0.2);
-        }
-        
-        .about-image i {
-            font-size: 4rem;
-            opacity: 0.95;
-        }
-        
-        .about-image h4 {
-            font-size: 2rem;
-            margin: 0;
-            font-weight: 700;
-        }
-        
-        .about-image p {
-            margin: 0;
-            font-size: 1.1rem;
-            opacity: 0.95;
-        }
-        
-        /* ==================== CONTACT SECTION ==================== */
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-        }
-        
-        @media (max-width: 768px) {
-            .contact-wrapper {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .contact-form {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid var(--border-gray);
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 10px;
-            color: var(--primary-blue);
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-        
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 18px;
-            border: 2px solid var(--border-gray);
-            border-radius: 10px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            background: white;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--secondary-orange);
-            box-shadow: 0 0 15px rgba(234, 88, 12, 0.15);
-            background: #fafafa;
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        .submit-btn {
-            width: 100%;
-            padding: 14px 28px;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.05rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Poppins', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(30, 64, 175, 0.3);
-        }
-        
-        .contact-info {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.2);
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            justify-content: space-between;
-        }
-        
-        .contact-item {
-            display: flex;
-            gap: 20px;
             align-items: flex-start;
-            padding-bottom: 25px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            gap: 8px;
+            line-height: 1.5;
         }
-        
-        .contact-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--secondary-orange);
-            min-width: 50px;
-            text-align: center;
+
+        .service-card i {
+            color: var(--orange-accent);
+            margin-top: 2px;
             flex-shrink: 0;
         }
-        
-        .contact-details h4 {
-            font-size: 1.15rem;
-            margin: 0 0 8px 0;
-            font-weight: 700;
-        }
-        
-        .contact-details p {
-            margin: 0;
-            line-height: 1.6;
-            opacity: 0.95;
-            font-size: 0.95rem;
-        }
-        
-        .whatsapp-section {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 10px;
-        }
-        
-        .whatsapp-btn {
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 25px;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
+
+        /* WHY CHOOSE US CARDS */
+        .why-choose-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid var(--light-gray);
             transition: all 0.3s ease;
-            margin-top: 12px;
-            font-size: 0.95rem;
-            border: none;
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
-        .whatsapp-btn:hover {
-            background: #20ba5a;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+
+        .why-choose-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(11, 61, 145, 0.12);
+            border-color: var(--navy-blue);
         }
-        
-        .working-hours {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 4px solid var(--secondary-orange);
-        }
-        
-        .working-hours h4 {
-            margin-top: 0;
-        }
-        
-        /* ==================== MAP PLACEHOLDER ==================== */
-        .map-placeholder {
-            width: 100%;
-            height: 350px;
-            background: linear-gradient(135deg, var(--light-gray) 0%, #fef3c7 100%);
-            border-radius: 15px;
+
+        .why-choose-card-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--orange-accent) 0%, var(--orange-light) 100%);
+            border-radius: 16px;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: var(--primary-blue);
-            text-align: center;
-            gap: 20px;
-            margin-top: 40px;
-            border: 2px dashed var(--border-gray);
-        }
-        
-        .map-placeholder i {
-            font-size: 3.5rem;
-        }
-        
-        .map-placeholder p {
-            margin: 0;
-            font-weight: 500;
-        }
-        
-        /* ==================== FOOTER ==================== */
-        footer {
-            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            margin: 0 auto 20px;
             color: white;
-            padding: 60px 20px 30px;
+            font-size: 32px;
+            box-shadow: 0 8px 20px rgba(230, 126, 34, 0.3);
         }
-        
-        .footer-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        @media (max-width: 768px) {
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-        }
-        
-        .footer-section h5 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--secondary-orange);
-            font-weight: 700;
-        }
-        
-        .footer-section p {
-            color: rgba(255, 255, 255, 0.85);
-            line-height: 1.8;
-            font-size: 0.95rem;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .footer-section ul li {
+
+        .why-choose-card h4 {
+            font-size: 20px;
+            color: var(--navy-blue);
             margin-bottom: 12px;
         }
-        
-        .footer-section a {
-            color: rgba(255, 255, 255, 0.85);
-            text-decoration: none;
-            transition: all 0.3s ease;
+
+        .why-choose-card p {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.6;
         }
-        
-        .footer-section a:hover {
-            color: var(--secondary-orange);
+
+        /* ABOUT SECTION */
+        .about-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 25px rgba(11, 61, 145, 0.1);
+            border: 1px solid var(--light-gray);
         }
-        
-        .social-icons {
-            display: flex;
-            gap: 15px;
+
+        .about-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+
+        .about-image-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(230, 126, 34, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .about-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(11, 61, 145, 0.05) 0%, rgba(230, 126, 34, 0.05) 100%);
+            border-left: 4px solid var(--navy-blue);
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 20px;
-            justify-content: flex-start;
         }
-        
-        @media (max-width: 768px) {
-            .social-icons {
-                justify-content: center;
-            }
-        }
-        
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 50%;
-            color: white;
+
+        /* CONTACT SECTION */
+        .contact-info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid var(--light-gray);
             transition: all 0.3s ease;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
-        .social-icon:hover {
-            background: var(--secondary-orange);
-            border-color: var(--secondary-orange);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+
+        .contact-info-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(11, 61, 145, 0.12);
         }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-            padding-top: 30px;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.75);
-        }
-        
-        .footer-bottom p {
-            margin: 8px 0;
-            font-size: 0.95rem;
-        }
-        
-        .authorized-badge {
-            background: var(--secondary-orange);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 15px;
-            box-shadow: 0 5px 15px rgba(234, 88, 12, 0.3);
-        }
-        
-        .authorized-badge i {
-            margin-right: 5px;
-        }
-        
-        /* ==================== FLOATING WHATSAPP BUTTON ==================== */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 65px;
-            height: 65px;
-            background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
-            border-radius: 50%;
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-light) 100%);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
             color: white;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .contact-info-card h4 {
+            font-size: 18px;
+            color: var(--navy-blue);
+            margin-bottom: 8px;
+        }
+
+        .contact-info-card p, .contact-info-card a {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .contact-info-card a {
+            color: var(--navy-blue);
+            font-weight: 600;
             text-decoration: none;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-            animation: bounce 2s infinite;
-            z-index: 99;
-            transition: all 0.3s ease;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: color 0.3s ease;
         }
-        
-        .floating-whatsapp:hover {
-            transform: scale(1.15);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
-            animation: none;
+
+        .contact-info-card a:hover {
+            color: var(--orange-accent);
         }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+
+        /* PREMIUM FOOTER */
+        .premium-footer {
+            background: linear-gradient(135deg, var(--navy-blue) 0%, var(--navy-dark) 100%);
+            color: white;
+            border-top: 3px solid var(--orange-accent);
+            position: relative;
+            overflow: hidden;
         }
-        
-        /* ==================== RESPONSIVE DESIGN ==================== */
+
+        .premium-footer::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(230, 126, 34, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.8);
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: var(--orange-accent);
+        }
+
+        .footer-divider {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+        .csc-footer-badge {
+            background: white;
+            color: var(--navy-blue);
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* RESPONSIVE GRID */
+        @media (max-width: 1024px) {
+            .section-heading {
+                font-size: 36px;
+            }
+        }
+
         @media (max-width: 768px) {
-            .header-container {
-                gap: 15px;
-                flex-wrap: wrap;
+            .section-heading {
+                font-size: 28px;
             }
-            
-            .header-center {
-                order: 1;
-                flex-basis: 100%;
-            }
-            
-            nav {
-                gap: 20px;
-                font-size: 0.85rem;
-            }
-            
-            .hero-content {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                padding: 40px 20px;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .owner-profile {
+
+            .profile-image {
                 width: 220px;
                 height: 220px;
-                font-size: 4rem;
             }
-            
-            .hero-buttons {
-                flex-direction: column;
+
+            .btn-premium {
+                padding: 12px 24px;
+                font-size: 14px;
             }
-            
-            .btn-primary, .btn-secondary {
-                width: 100%;
-                justify-content: center;
+        }
+
+        @media (max-width: 640px) {
+            .profile-image {
+                width: 180px;
+                height: 180px;
             }
-            
-            section {
-                padding: 60px 20px;
+
+            .section-heading {
+                font-size: 24px;
             }
-            
-            section h2 {
-                font-size: 2rem;
+
+            .service-card {
+                padding: 24px 18px;
             }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .floating-whatsapp {
-                bottom: 20px;
-                right: 20px;
-                width: 55px;
-                height: 55px;
-                font-size: 1.5rem;
-            }
+        }
+
+        /* UTILITY CLASSES */
+        .text-navy-blue { color: var(--navy-blue); }
+        .text-orange { color: var(--orange-accent); }
+        .text-green { color: var(--gov-green); }
+
+        .relative { position: relative; }
+        .z-10 { z-index: 10; }
+
+        /* SMOOTH SCROLLING */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 <body>
-    <!-- ==================== HEADER ==================== -->
-    <header>
-        <div class="header-container">
-            <!-- Logo and Shop Name -->
-            <div class="header-left">
-                <div class="shop-logo">
-                    <i class="fas fa-globe"></i>
+    <!-- PREMIUM HEADER -->
+    <header class="premium-header">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <!-- Left: Branding -->
+                <div class="flex items-center gap-4">
+                    <div class="flex-shrink-0">
+                        <img src="https://csc.gov.in/sites/all/themes/csc_theme/logo.png" alt="CSC Logo" class="h-14 animate-fade-in">
+                    </div>
+                    <div class="hidden sm:block border-l-2 border-var-light-gray pl-4">
+                        <h1 class="text-2xl font-bold text-navy-blue animate-slide-in-left">Raj Enterprises</h1>
+                        <p class="text-sm text-gray-600 animate-slide-in-left">Premium CSC Digital Seva</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="shop-name" id="shopName">[YOUR SHOP NAME]</p>
-                    <p class="shop-tagline">Authorized CSC Digital Seva</p>
-                </div>
-            </div>
-            
-            <!-- Navigation -->
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            
-            <!-- CSC Badge -->
-            <div class="header-right">
-                <div class="csc-badge">
-                    <i class="fas fa-check-circle"></i>
-                    <span>CSC ID: <span id="cscIdBadge">[YOUR CSC ID]</span></span>
+
+                <!-- Right: Navigation & Badges -->
+                <div class="flex items-center gap-6">
+                    <nav class="hidden md:flex gap-6">
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-3">
+                        <span class="csc-badge animate-slide-in-right">✓ Authorized</span>
+                        <div class="hidden lg:block csc-id-badge animate-slide-in-right">
+                            CSC ID: 345715110017
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- ==================== HERO SECTION ==================== -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <!-- Left Content -->
-            <div class="hero-left">
-                <h1>Authorized CSC Digital Seva Kendra</h1>
-                <p>Government & Online Services Under One Roof</p>
-                
-                <!-- Meta Information -->
-                <div class="hero-meta">
-                    <div class="meta-badge">
-                        <i class="fas fa-user-circle"></i>
-                        <span>Owner: <strong id="ownerName">[YOUR NAME]</strong></span>
-                    </div>
-                    <div class="meta-badge">
-                        <i class="fas fa-id-badge"></i>
-                        <span>CSC: <strong id="cscIdMeta">[YOUR CSC ID]</strong></span>
+    <!-- HERO SECTION -->
+    <section class="hero-section py-20 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Profile -->
+                <div class="flex justify-center animate-slide-in-left">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/280x280/0b3d91/ffffff?text=Raj+Shekhar" alt="Raj Shekhar" class="profile-image">
+                        <div class="absolute -bottom-6 -right-6 glass-effect p-4 rounded-xl z-10 shadow-lg">
+                            <p class="text-sm font-semibold text-navy-blue">CSC VLE Operator</p>
+                            <p class="text-xs text-gray-600">Digital India Mission</p>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- CTA Buttons -->
-                <div class="hero-buttons">
-                    <a href="tel:+919XXXXXXXXXX" class="btn-primary">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                    <a href="https://wa.me/919XXXXXXXXXX" target="_blank" class="btn-secondary">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="#services" class="btn-secondary" style="background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.5);">
-                        <i class="fas fa-arrow-down"></i> View Services
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Right Content - Profile Image -->
-            <div class="hero-right">
-                <div class="owner-profile">
-                    <i class="fas fa-user"></i>
+
+                <!-- Right: Content -->
+                <div class="space-y-8 animate-slide-in-right">
+                    <div class="space-y-4">
+                        <h2 class="text-5xl md:text-6xl font-bold text-navy-blue leading-tight">
+                            Digital Seva<br>
+                            <span class="gradient-orange bg-clip-text text-transparent">Common Service</span>
+                            <br>Center
+                        </h2>
+                        <p class="text-xl text-gray-700 font-medium">
+                            Government & Online Services Under One Roof
+                        </p>
+                    </div>
+
+                    <!-- CSC ID Highlight -->
+                    <div class="glass-effect p-6 rounded-12 border-l-4 border-orange-accent">
+                        <p class="text-sm text-gray-600 font-semibold mb-2">AUTHORIZED CSC ID</p>
+                        <p class="text-3xl font-bold text-navy-blue font-mono">345715110017</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="tel:8434121887" class="btn-premium btn-primary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/918434121887" target="_blank" class="btn-premium btn-secondary">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#services" class="btn-premium btn-orange">
+                            <i class="fas fa-list"></i> Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Badge -->
+                    <div class="flex items-center gap-3 pt-6 border-t border-light-gray">
+                        <div class="w-12 h-12 rounded-full gradient-green flex items-center justify-center text-white">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-navy-blue">Government Authorized</p>
+                            <p class="text-sm text-gray-600">Trusted CSC Partner</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== SERVICES SECTION ==================== -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <p class="section-subtitle">Comprehensive range of government and online services delivered with excellence and reliability</p>
-        
-        <div class="services-grid">
-            <!-- 1. Aadhaar Services -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/UIDAI_Logo.svg/1200px-UIDAI_Logo.svg.png" alt="Aadhaar" loading="lazy">
-                </div>
-                <h3 class="service-title">Aadhaar Services</h3>
-                <ul class="service-features">
-                    <li>New Registration & Update</li>
-                    <li>Aadhaar Correction</li>
-                    <li>PVC Card</li>
-                    <li>E-Aadhaar Download</li>
-                </ul>
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="mb-16 text-center animate-fade-in">
+                <h2 class="section-heading text-center mx-auto">Our Premium Services</h2>
+                <p class="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
+                    Complete Government & Digital Services Delivered with Excellence
+                </p>
             </div>
 
-            <!-- 2. PAN Card -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-id-card"></i>
+            <!-- A) ID & DOCUMENT SERVICES -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-navy-blue mb-10 flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white">
+                        <i class="fas fa-id-card"></i>
+                    </span>
+                    ID & Document Services
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Aadhaar Services -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Unique_Identification_Authority_of_India_Logo.svg" alt="UIDAI" class="service-logo">
+                        <h4>Aadhaar Services</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Aadhaar Enrollment</li>
+                            <li><i class="fas fa-check"></i>Aadhaar Update & Print</li>
+                        </ul>
+                    </div>
+
+                    <!-- PAN Card -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=NSDL" alt="NSDL" class="service-logo">
+                        <h4>PAN Card</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>New PAN Application</li>
+                            <li><i class="fas fa-check"></i>PAN Correction</li>
+                        </ul>
+                    </div>
+
+                    <!-- Voter ID -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=Election" alt="Election" class="service-logo">
+                        <h4>Voter ID</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Voter Registration</li>
+                            <li><i class="fas fa-check"></i>Voter ID Download</li>
+                        </ul>
+                    </div>
+
+                    <!-- Passport Seva -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=Passport" alt="Passport" class="service-logo">
+                        <h4>Passport Seva</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Application Forms</li>
+                            <li><i class="fas fa-check"></i>Document Guidance</li>
+                        </ul>
+                    </div>
+
+                    <!-- e-Shram Card -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=e-Shram" alt="e-Shram" class="service-logo">
+                        <h4>e-Shram Card</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Worker Registration</li>
+                            <li><i class="fas fa-check"></i>Card Download</li>
+                        </ul>
+                    </div>
+
+                    <!-- DigiLocker -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=DigiLocker" alt="DigiLocker" class="service-logo">
+                        <h4>DigiLocker</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Document Storage</li>
+                            <li><i class="fas fa-check"></i>e-Certificates</li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 class="service-title">PAN Card</h3>
-                <ul class="service-features">
-                    <li>New PAN Application</li>
-                    <li>PAN Correction</li>
-                    <li>PAN Reprint</li>
-                    <li>e-PAN Download</li>
-                </ul>
             </div>
 
-            <!-- 3. IRCTC Railway Booking -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-train"></i>
+            <!-- B) BANKING & FINANCIAL SERVICES -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-navy-blue mb-10 flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white">
+                        <i class="fas fa-piggy-bank"></i>
+                    </span>
+                    Banking & Financial Services
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- AEPS Banking -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=AEPS" alt="AEPS" class="service-logo">
+                        <h4>AEPS Banking</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Cash Withdrawal</li>
+                            <li><i class="fas fa-check"></i>Balance Enquiry</li>
+                        </ul>
+                    </div>
+
+                    <!-- LIC Insurance -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=LIC" alt="LIC" class="service-logo">
+                        <h4>LIC Insurance</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Policy Assistance</li>
+                            <li><i class="fas fa-check"></i>Premium Payment</li>
+                        </ul>
+                    </div>
+
+                    <!-- PM Kisan -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=PMKisan" alt="PM Kisan" class="service-logo">
+                        <h4>PM Kisan Scheme</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Farmer Registration</li>
+                            <li><i class="fas fa-check"></i>Benefit Status</li>
+                        </ul>
+                    </div>
+
+                    <!-- Atal Pension Yojana -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=APY" alt="APY" class="service-logo">
+                        <h4>Atal Pension Yojana</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Enrolment Support</li>
+                            <li><i class="fas fa-check"></i>Account Management</li>
+                        </ul>
+                    </div>
+
+                    <!-- ITR Filing -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=ITR" alt="ITR" class="service-logo">
+                        <h4>ITR Filing</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Income Tax Return</li>
+                            <li><i class="fas fa-check"></i>Refund Status</li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 class="service-title">IRCTC Railway</h3>
-                <ul class="service-features">
-                    <li>Train Ticket Booking</li>
-                    <li>Ticket Cancellation</li>
-                    <li>Quick Booking Support</li>
-                    <li>Instant Confirmation</li>
-                </ul>
             </div>
 
-            <!-- 4. Ayushman Bharat -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-heart"></i>
+            <!-- C) BILL & RECHARGE SERVICES -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-navy-blue mb-10 flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white">
+                        <i class="fas fa-receipt"></i>
+                    </span>
+                    Bill & Recharge Services
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Electricity Bill -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-orange-accent"><i class="fas fa-bolt"></i></div>
+                        <h4>Electricity Bill</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Bill Payment</li>
+                            <li><i class="fas fa-check"></i>Instant Receipt</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Recharge -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-orange-accent"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Mobile Recharge</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>All Networks</li>
+                            <li><i class="fas fa-check"></i>Prepaid & Postpaid</li>
+                        </ul>
+                    </div>
+
+                    <!-- DTH Recharge -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-orange-accent"><i class="fas fa-satellite"></i></div>
+                        <h4>DTH Recharge</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>All DTH Providers</li>
+                            <li><i class="fas fa-check"></i>Instant Activation</li>
+                        </ul>
+                    </div>
+
+                    <!-- FASTag -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=FASTag" alt="FASTag" class="service-logo">
+                        <h4>FASTag Services</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>New FASTag</li>
+                            <li><i class="fas fa-check"></i>Recharge & Support</li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 class="service-title">Ayushman Bharat</h3>
-                <ul class="service-features">
-                    <li>Golden Card Registration</li>
-                    <li>PM-JAY Enrollment</li>
-                    <li>Card Download</li>
-                    <li>Eligibility Check</li>
-                </ul>
             </div>
 
-            <!-- 5. PM Kisan -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-leaf"></i>
+            <!-- D) GOVERNMENT CERTIFICATES -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-navy-blue mb-10 flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white">
+                        <i class="fas fa-certificate"></i>
+                    </span>
+                    Government Certificates
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Income Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-file-contract"></i></div>
+                        <h4>Income Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Application Support</li>
+                            <li><i class="fas fa-check"></i>Document Assistance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Caste Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-file-invoice"></i></div>
+                        <h4>Caste Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Application Guidance</li>
+                            <li><i class="fas fa-check"></i>Status Tracking</li>
+                        </ul>
+                    </div>
+
+                    <!-- Domicile Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-home"></i></div>
+                        <h4>Domicile Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Online Application</li>
+                            <li><i class="fas fa-check"></i>Document Verification</li>
+                        </ul>
+                    </div>
+
+                    <!-- Birth Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-file-alt"></i></div>
+                        <h4>Birth Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Registration Assistance</li>
+                            <li><i class="fas fa-check"></i>Copy Download</li>
+                        </ul>
+                    </div>
+
+                    <!-- Death Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-file-pdf"></i></div>
+                        <h4>Death Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Registration Support</li>
+                            <li><i class="fas fa-check"></i>Certificate Copy</li>
+                        </ul>
+                    </div>
+
+                    <!-- EWS Certificate -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-navy-blue"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>EWS Certificate</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Application Filing</li>
+                            <li><i class="fas fa-check"></i>Form Filling</li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 class="service-title">PM Kisan</h3>
-                <ul class="service-features">
-                    <li>Farmer Registration</li>
-                    <li>Benefit Transfer</li>
-                    <li>Status Tracking</li>
-                    <li>Account Update</li>
-                </ul>
             </div>
 
-            <!-- 6. e-Shram Card -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <h3 class="service-title">e-Shram Card</h3>
-                <ul class="service-features">
-                    <li>Worker Registration</li>
-                    <li>New Card Issuance</li>
-                    <li>Database Updates</li>
-                    <li>Status Verification</li>
-                </ul>
-            </div>
+            <!-- E) TICKETING SERVICES -->
+            <div>
+                <h3 class="text-3xl font-bold text-navy-blue mb-10 flex items-center gap-3">
+                    <span class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white">
+                        <i class="fas fa-ticket-alt"></i>
+                    </span>
+                    Ticketing Services
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Railway Booking -->
+                    <div class="service-card animate-slide-in-up">
+                        <img src="https://via.placeholder.com/120x50/0b3d91/ffffff?text=IRCTC" alt="IRCTC" class="service-logo">
+                        <h4>Railway Booking</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Train Ticket Booking</li>
+                            <li><i class="fas fa-check"></i>Instant Confirmation</li>
+                        </ul>
+                    </div>
 
-            <!-- 7. DigiLocker -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <h3 class="service-title">DigiLocker</h3>
-                <ul class="service-features">
-                    <li>Account Creation</li>
-                    <li>Document Upload</li>
-                    <li>E-signature Support</li>
-                    <li>Share Documents</li>
-                </ul>
-            </div>
-
-            <!-- 8. Passport Seva -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-passport"></i>
-                </div>
-                <h3 class="service-title">Passport Seva</h3>
-                <ul class="service-features">
-                    <li>New Passport Application</li>
-                    <li>Appointment Booking</li>
-                    <li>Document Verification</li>
-                    <li>Renewal Support</li>
-                </ul>
-            </div>
-
-            <!-- 9. Voter ID -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-vote-yea"></i>
-                </div>
-                <h3 class="service-title">Voter ID</h3>
-                <ul class="service-features">
-                    <li>Electoral Registration</li>
-                    <li>New Voter ID</li>
-                    <li>Correction Request</li>
-                    <li>E-Voter Card</li>
-                </ul>
-            </div>
-
-            <!-- 10. Banking Services -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-university"></i>
-                </div>
-                <h3 class="service-title">Banking Services</h3>
-                <ul class="service-features">
-                    <li>Money Withdrawal (AePS)</li>
-                    <li>Money Transfer</li>
-                    <li>Balance Enquiry</li>
-                    <li>Mini Statement</li>
-                </ul>
-            </div>
-
-            <!-- 11. Insurance Services -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 class="service-title">Insurance</h3>
-                <ul class="service-features">
-                    <li>LIC Policy Payment</li>
-                    <li>New Policy Registration</li>
-                    <li>Premium Payment</li>
-                    <li>Policy Support</li>
-                </ul>
-            </div>
-
-            <!-- 12. Bill Payments -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3 class="service-title">Bill Payments</h3>
-                <ul class="service-features">
-                    <li>Electricity Bill</li>
-                    <li>Water Bill</li>
-                    <li>Gas Bill</li>
-                    <li>Instant Payment</li>
-                </ul>
-            </div>
-
-            <!-- 13. Mobile & DTH Recharge -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3 class="service-title">Mobile & DTH</h3>
-                <ul class="service-features">
-                    <li>Prepaid Recharge</li>
-                    <li>Postpaid Payment</li>
-                    <li>DTH Recharge</li>
-                    <li>All Operators</li>
-                </ul>
-            </div>
-
-            <!-- 14. FASTag Services -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-road"></i>
-                </div>
-                <h3 class="service-title">FASTag Services</h3>
-                <ul class="service-features">
-                    <li>FASTag Purchase</li>
-                    <li>Tag Recharge</li>
-                    <li>Toll Support</li>
-                    <li>Account Management</li>
-                </ul>
-            </div>
-
-            <!-- 15. Birth Certificate -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <h3 class="service-title">Birth Certificate</h3>
-                <ul class="service-features">
-                    <li>New Registration</li>
-                    <li>Certificate Issuance</li>
-                    <li>Duplicate Copy</li>
-                    <li>Correction Service</li>
-                </ul>
-            </div>
-
-            <!-- 16. Death Certificate -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h3 class="service-title">Death Certificate</h3>
-                <ul class="service-features">
-                    <li>New Registration</li>
-                    <li>Certificate Issuance</li>
-                    <li>Duplicate Copy</li>
-                    <li>Online Request</li>
-                </ul>
-            </div>
-
-            <!-- 17. Income Certificate -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-rupee-sign"></i>
-                </div>
-                <h3 class="service-title">Income Certificate</h3>
-                <ul class="service-features">
-                    <li>Online Application</li>
-                    <li>Document Verification</li>
-                    <li>Certificate Generation</li>
-                    <li>Quick Processing</li>
-                </ul>
-            </div>
-
-            <!-- 18. Caste Certificate -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h3 class="service-title">Caste Certificate</h3>
-                <ul class="service-features">
-                    <li>Online Application</li>
-                    <li>Document Upload</li>
-                    <li>Certificate Issuance</li>
-                    <li>Verification Support</li>
-                </ul>
-            </div>
-
-            <!-- 19. Domicile Certificate -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <h3 class="service-title">Domicile Certificate</h3>
-                <ul class="service-features">
-                    <li>New Application</li>
-                    <li>Proof Submission</li>
-                    <li>Certificate Download</li>
-                    <li>Authority Support</li>
-                </ul>
-            </div>
-
-            <!-- 20. Online Form Filling -->
-            <div class="service-card">
-                <div class="service-logo">
-                    <i class="fas fa-pencil-alt"></i>
-                </div>
-                <h3 class="service-title">Form Filling</h3>
-                <ul class="service-features">
-                    <li>Government Exam Forms</li>
-                    <li>Entrance Exams</li>
-                    <li>Online Applications</li>
-                    <li>Complete Guidance</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== WHY CHOOSE US ==================== -->
-    <section>
-        <div class="why-choose">
-            <h2>Why Choose Our CSC Center?</h2>
-            <p class="section-subtitle">Delivering excellence with trust, transparency, and customer satisfaction</p>
-            
-            <div class="why-grid">
-                <!-- 1. Government Authorized -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-check-double"></i>
-                    <h3 class="why-title">Government Authorized</h3>
-                    <p class="why-description">Fully authorized and registered CSC VLE center with official certification from Ministry of Electronics & IT</p>
-                </div>
-                
-                <!-- 2. Fast Processing -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-tachometer-alt"></i>
-                    <h3 class="why-title">Fast Processing</h3>
-                    <p class="why-description">Quick and efficient service delivery with minimal processing time and same-day document issuance</p>
-                </div>
-                
-                <!-- 3. Trusted Service -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-handshake"></i>
-                    <h3 class="why-title">Trusted Service</h3>
-                    <p class="why-description">Years of experience serving thousands of satisfied customers with consistent quality and reliability</p>
-                </div>
-                
-                <!-- 4. Secure Digital -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-shield-alt"></i>
-                    <h3 class="why-title">Secure Digital</h3>
-                    <p class="why-description">Bank-level encryption and data protection for all your sensitive personal and official information</p>
-                </div>
-                
-                <!-- 5. Customer Support -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-headset"></i>
-                    <h3 class="why-title">100% Support</h3>
-                    <p class="why-description">Dedicated customer support team available to assist you with queries and technical issues</p>
-                </div>
-                
-                <!-- 6. Transparent Pricing -->
-                <div class="why-item">
-                    <i class="why-icon fas fa-tag"></i>
-                    <h3 class="why-title">Transparent Pricing</h3>
-                    <p class="why-description">Clear and competitive pricing with no hidden charges - exactly what you see is what you pay</p>
+                    <!-- Air Ticket Booking -->
+                    <div class="service-card animate-slide-in-up">
+                        <div class="text-4xl mb-4 text-orange-accent"><i class="fas fa-plane"></i></div>
+                        <h4>Air Ticket Booking</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Domestic & International</li>
+                            <li><i class="fas fa-check"></i>Best Prices</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section id="about">
-        <h2>About Our CSC Center</h2>
-        <p class="section-subtitle">Your trusted partner in digital transformation and government services</p>
-        
-        <div class="about-content">
-            <!-- Left Side - Text -->
-            <div class="about-text">
-                <h3>Welcome to <span id="aboutShopName">[YOUR SHOP NAME]</span></h3>
-                <p>We are an authorized Common Service Center (CSC) VLE, operating under the CSC e-Governance Services India Limited initiative. Our mission is to bridge the digital divide and make government services accessible to every citizen in our community.</p>
-                
-                <p>With <strong id="experienceText">several years</strong> of dedicated service, our team has successfully delivered thousands of government transactions with 100% accuracy and customer satisfaction. We are committed to the Digital India Mission and work tirelessly to transform lives through digital empowerment.</p>
-                
-                <p>Our center is equipped with the latest technology and operated by trained, certified professionals who understand the importance of security, accuracy, and timely service delivery.</p>
-                
-                <ul class="about-features">
-                    <li>Ministry of Electronics & IT Authorized Center</li>
-                    <li>Trained and CSC-certified service provider</li>
-                    <li>Real-time integration with government databases</li>
-                    <li>Secure encryption and data protection</li>
-                    <li>24/7 technical support available</li>
-                    <li>Competitive and transparent pricing structure</li>
-                    <li>Dedicated customer service team</li>
-                    <li>Government-backed guarantee and support</li>
-                </ul>
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="py-24 bg-gradient-to-br from-ash-white via-white to-ash-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="section-heading text-center mx-auto">Why Choose Raj Enterprises?</h2>
+                <p class="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
+                    Trusted Partner for Your Digital Services Needs
+                </p>
             </div>
-            
-            <!-- Right Side - Visual -->
-            <div class="about-image">
-                <i class="fas fa-server"></i>
-                <h4>Digital Excellence</h4>
-                <p>Transforming Lives Through Digital India Mission</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Government Authorized -->
+                <div class="why-choose-card animate-slide-in-up">
+                    <div class="why-choose-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Government Authorized</h4>
+                    <p>Certified CSC VLE operating under official government guidelines and regulations</p>
+                </div>
+
+                <!-- Fast & Secure -->
+                <div class="why-choose-card animate-slide-in-up">
+                    <div class="why-choose-card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>Fast & Secure</h4>
+                    <p>Secure transactions with quick service delivery and data protection</p>
+                </div>
+
+                <!-- Digital India Support -->
+                <div class="why-choose-card animate-slide-in-up">
+                    <div class="why-choose-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Digital India Mission</h4>
+                    <p>Dedicated to promoting digital services and financial inclusion nationwide</p>
+                </div>
+
+                <!-- Trusted Local Service -->
+                <div class="why-choose-card animate-slide-in-up">
+                    <div class="why-choose-card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Trusted Local Service</h4>
+                    <p>Your reliable neighborhood partner for all digital and government needs</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <p class="section-subtitle">Have questions? We're here to help. Reach out to us anytime</p>
-        
-        <div class="contact-wrapper">
-            <!-- Contact Form -->
-            <form class="contact-form" onsubmit="handleFormSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <!-- ABOUT VLE SECTION -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left: Image -->
+                <div class="animate-slide-in-left">
+                    <div class="about-image-container relative">
+                        <img src="https://via.placeholder.com/400x450/0b3d91/ffffff?text=Raj+Shekhar+CSC+VLE" alt="Raj Shekhar" class="w-full rounded-xl shadow-lg">
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="mobile">Mobile Number</label>
-                    <input type="tel" id="mobile" name="mobile" placeholder="+91 9XXXXXXXXXX" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="your.email@example.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="service">Service Required</label>
-                    <input type="text" id="service" name="service" placeholder="Which service are you interested in?">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Tell us about your requirement..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
 
-            <!-- Contact Information -->
-            <div class="contact-info">
-                <!-- Address -->
-                <div class="contact-item">
-                    <i class="contact-icon fas fa-map-marker-alt"></i>
-                    <div class="contact-details">
-                        <h4>Office Address</h4>
-                        <p id="contactAddress">[YOUR ADDRESS]</p>
+                <!-- Right: Content -->
+                <div class="space-y-6 animate-slide-in-right">
+                    <div>
+                        <h2 class="text-4xl font-bold text-navy-blue mb-4">About Our VLE</h2>
+                        <div class="h-1 w-20 gradient-orange rounded"></div>
+                    </div>
+
+                    <div class="space-y-4 text-gray-700">
+                        <p class="text-lg font-semibold">
+                            <span class="text-navy-blue">Name:</span> Raj Shekhar
+                        </p>
+                        <p class="leading-relaxed text-base">
+                            I am an authorized CSC (Common Service Center) operator dedicated to providing comprehensive digital services to the people of Aliganj (Jamui), Bihar. With a commitment to the Digital India Mission, I strive to make government services and digital solutions accessible to every citizen.
+                        </p>
+                        <p class="text-lg font-semibold">
+                            <span class="text-navy-blue">Position:</span> Authorized CSC Village Level Entrepreneur (VLE)
+                        </p>
+                        <p class="leading-relaxed text-base">
+                            Through Raj Enterprises, I provide a complete range of government services including identity documents, financial services, bill payments, and government certificates. My goal is to bridge the digital divide and empower citizens with easy access to official online services.
+                        </p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p class="text-base">
+                            <i class="fas fa-star orange-accent mr-3"></i>
+                            <span class="font-semibold text-navy-blue">Serving the Digital India Mission with dedication and integrity</span>
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-6">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-orange-accent">10+</p>
+                            <p class="text-sm text-gray-600">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-orange-accent">5000+</p>
+                            <p class="text-sm text-gray-600">Customers Served</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-orange-accent">100%</p>
+                            <p class="text-sm text-gray-600">Satisfaction Rate</p>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Phone -->
-                <div class="contact-item">
-                    <i class="contact-icon fas fa-phone"></i>
-                    <div class="contact-details">
-                        <h4>Phone Number</h4>
-                        <p id="contactPhone">[YOUR MOBILE]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-ash-white to-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="section-heading text-center mx-auto">Get In Touch</h2>
+                <p class="text-gray-600 text-lg mt-6 max-w-2xl mx-auto">
+                    We're Here to Help - Reach Out Anytime
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-6">
+                    <!-- Address -->
+                    <div class="contact-info-card animate-slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Address</h4>
+                        <p>
+                            Rajswa Kachahari Chowk,<br>
+                            Aliganj (Jamui),<br>
+                            Bihar - 811311
+                        </p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-info-card animate-slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone Numbers</h4>
+                        <p>
+                            <a href="tel:8434121887">+91 8434121887</a><br>
+                            <a href="tel:8873464911">+91 8873464911</a>
+                        </p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-info-card animate-slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>
+                            <a href="mailto:rajitsolution@gmail.com">rajitsolution@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-info-card animate-slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp Direct</h4>
+                        <p>
+                            <a href="https://wa.me/918434121887" target="_blank">+91 8434121887</a><br>
+                            <span class="text-xs text-gray-500">Click to message directly</span>
+                        </p>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="contact-info-card animate-slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Working Hours</h4>
+                        <p>
+                            Monday - Friday: 9:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 2:00 PM<br>
+                            <span class="text-gray-500">Sunday: Closed</span>
+                        </p>
                     </div>
                 </div>
-                
-                <!-- Email -->
-                <div class="contact-item">
-                    <i class="contact-icon fas fa-envelope"></i>
-                    <div class="contact-details">
-                        <h4>Email Address</h4>
-                        <p>support@cscdigitalseva.com</p>
+
+                <!-- Map -->
+                <div class="animate-slide-in-right">
+                    <div class="rounded-xl overflow-hidden shadow-lg h-full min-h-96">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.847523456789!2d86.01234!3d24.32!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed3f7e6ce3cdef%3A0x1234567890abcdef!2sAliganj%2C%20Jamui%2C%20Bihar!5e0!3m2!1sen!2sin!4v1234567890" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
-                
-                <!-- WhatsApp -->
-                <div class="whatsapp-section">
-                    <p style="margin: 0 0 10px 0; font-weight: 600;">
-                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM FOOTER -->
+    <footer class="premium-footer py-16 relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- About -->
+                <div class="animate-fade-in">
+                    <h4 class="font-bold text-xl mb-4 flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-orange-accent"></i> Raj Enterprises
+                    </h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Authorized Common Service Center dedicated to providing premium digital services to the people of Aliganj, Jamui, Bihar. Part of the Digital India Mission.
                     </p>
-                    <p style="margin: 0 0 15px 0; opacity: 0.9; font-size: 0.9rem;">
-                        Connect with us instantly for quick responses
-                    </p>
-                    <a href="https://wa.me/919XXXXXXXXXX" target="_blank" class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Start Chat
-                    </a>
                 </div>
-                
-                <!-- Working Hours -->
-                <div class="working-hours">
-                    <h4>Working Hours</h4>
-                    <p><strong>Monday - Saturday:</strong> 9:00 AM - 8:00 PM</p>
-                    <p><strong>Sunday:</strong> 10:00 AM - 6:00 PM</p>
-                    <p style="font-size: 0.9rem; opacity: 0.9;"><em>Extended hours available on request</em></p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Google Map Placeholder -->
-        <div class="map-placeholder">
-            <i class="fas fa-map"></i>
-            <p><strong>Our Location</strong></p>
-            <p>Replace this with your Google Maps embedded location</p>
-        </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer>
-        <div class="footer-container">
-            <!-- Footer Content -->
-            <div class="footer-content">
-                <!-- About Footer -->
-                <div class="footer-section">
-                    <h5>About CSC Kendra</h5>
-                    <p>We are your gateway to all government and digital services. Authorized and certified by the Government of India, we pride ourselves on delivering excellence with trust and transparency.</p>
-                    <div class="authorized-badge">
-                        <i class="fas fa-shield-check"></i> Authorized CSC VLE
-                    </div>
-                </div>
-                
                 <!-- Quick Links -->
-                <div class="footer-section">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                <div class="animate-fade-in">
+                    <h4 class="font-bold text-xl mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="footer-link"><i class="fas fa-chevron-right mr-2"></i>Our Services</a></li>
+                        <li><a href="#about" class="footer-link"><i class="fas fa-chevron-right mr-2"></i>About Us</a></li>
+                        <li><a href="#contact" class="footer-link"><i class="fas fa-chevron-right mr-2"></i>Contact</a></li>
+                        <li><a href="mailto:rajitsolution@gmail.com" class="footer-link"><i class="fas fa-chevron-right mr-2"></i>Email Us</a></li>
                     </ul>
                 </div>
-                
-                <!-- CSC Information -->
-                <div class="footer-section">
-                    <h5>CSC Details</h5>
-                    <p><strong>Owner:</strong> <span id="footerOwner">[YOUR NAME]</span></p>
-                    <p><strong>CSC ID:</strong> <span id="footerCSCID">[YOUR CSC ID]</span></p>
-                    <p><strong>Status:</strong> <span style="color: var(--secondary-orange);">✓ Active & Authorized</span></p>
-                </div>
-                
-                <!-- Social Media -->
-                <div class="footer-section">
-                    <h5>Follow Us</h5>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+
+                <!-- Connect -->
+                <div class="animate-fade-in">
+                    <h4 class="font-bold text-xl mb-4">Connect With Us</h4>
+                    <div class="flex gap-4 mb-6">
+                        <a href="https://wa.me/918434121887" target="_blank" class="w-12 h-12 rounded-lg gradient-orange flex items-center justify-center text-white hover:scale-110 transition">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                        </a>
+                        <a href="https://www.google.com/search?q=raj+enterprises+csc+aliganj" target="_blank" class="w-12 h-12 rounded-lg gradient-navy-blue flex items-center justify-center text-white hover:scale-110 transition">
+                            <i class="fab fa-google text-lg"></i>
+                        </a>
                     </div>
+                    <p class="text-gray-300 text-xs">Follow us on social platforms</p>
                 </div>
             </div>
-            
+
+            <!-- CSC ID Badge -->
+            <div class="mb-8">
+                <div class="csc-footer-badge">
+                    <p class="text-sm font-semibold text-gray-600">AUTHORIZED CSC ID</p>
+                    <p class="text-2xl font-bold text-navy-blue font-mono mt-2">345715110017</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
             <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <p>&copy; 2024-2026 CSC Digital Seva Kendra. All Rights Reserved.</p>
-                <p>This is an Authorized Common Service Center operating under CSC e-Governance Services India Limited</p>
-                <p style="font-size: 0.85rem; opacity: 0.8;">Website developed in compliance with Digital India Initiative Standards</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center md:text-left text-sm">
+                <div class="text-gray-300">
+                    <p>&copy; 2024 Raj Enterprises CSC. All Rights Reserved.</p>
+                    <p class="text-xs text-gray-400 mt-2">Operating under Common Service Centers e-Governance Services India Limited</p>
+                </div>
+                <div class="text-gray-300 md:text-right">
+                    <p class="font-semibold"><i class="fas fa-award mr-2 text-orange-accent"></i>Government Authorized Service Center</p>
+                    <p class="text-xs text-gray-400 mt-2">Digital India Mission Partner</p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
-    <a href="https://wa.me/919XXXXXXXXXX" target="_blank" class="floating-whatsapp" title="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- ==================== JAVASCRIPT ==================== -->
+    <!-- SMOOTH SCROLL & ANIMATIONS -->
     <script>
-        // ==================== CONFIGURATION ==================== //
-        // UPDATE THESE VALUES WITH YOUR ACTUAL INFORMATION
-        const cscConfig = {
-            ownerName: "[YOUR NAME]",
-            cscId: "[YOUR CSC ID]",
-            shopName: "[YOUR SHOP NAME]",
-            mobileNumber: "[YOUR MOBILE]",
-            whatsappNumber: "919XXXXXXXXXX", // Without + sign
-            address: "[YOUR ADDRESS]",
-            email: "support@cscdigitalseva.com"
-        };
-
-        // ==================== UPDATE PAGE WITH CONFIGURATION ==================== //
-        function updatePageContent() {
-            // Update all dynamic content
-            document.getElementById('shopName').textContent = cscConfig.shopName;
-            document.getElementById('ownerName').textContent = cscConfig.ownerName;
-            document.getElementById('cscIdBadge').textContent = cscConfig.cscId;
-            document.getElementById('cscIdMeta').textContent = cscConfig.cscId;
-            document.getElementById('aboutShopName').textContent = cscConfig.shopName;
-            document.getElementById('contactPhone').textContent = cscConfig.mobileNumber;
-            document.getElementById('contactAddress').textContent = cscConfig.address;
-            document.getElementById('footerOwner').textContent = cscConfig.ownerName;
-            document.getElementById('footerCSCID').textContent = cscConfig.cscId;
-
-            // Update WhatsApp links
-            const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
-            whatsappLinks.forEach(link => {
-                link.href = `https://wa.me/${cscConfig.whatsappNumber}`;
-            });
-
-            // Update phone link
-            const phoneLink = document.querySelector('a[href*="tel:"]');
-            if (phoneLink) {
-                phoneLink.href = `tel:${cscConfig.mobileNumber}`;
-            }
-        }
-
-        // ==================== FORM SUBMISSION HANDLER ==================== //
-        function handleFormSubmit(event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const mobile = document.getElementById('mobile').value;
-            const email = document.getElementById('email').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
-
-            // Create WhatsApp message
-            const whatsappMessage = `Hello ${cscConfig.shopName},\n\nI am interested in your services.\n\nMy Details:\nName: ${name}\nMobile: ${mobile}\nEmail: ${email}\nService Interested: ${service}\n\nMessage: ${message}\n\nPlease contact me at your earliest convenience.`;
-
-            // Encode and open WhatsApp
-            const encodedMessage = encodeURIComponent(whatsappMessage);
-            window.open(`https://wa.me/${cscConfig.whatsappNumber}?text=${encodedMessage}`, '_blank');
-
-            // Reset form
-            document.querySelector('.contact-form').reset();
-
-            // Show success message
-            alert('Thank you! Your message has been sent via WhatsApp. We will respond shortly.');
-        }
-
-        // ==================== SMOOTH SCROLLING ==================== //
+        // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1741,7 +1379,7 @@
             });
         });
 
-        // ==================== SCROLL ANIMATIONS ==================== //
+        // Intersection Observer for Animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -1751,42 +1389,19 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
-                    entry.target.style.animation = 'slideInUp 0.6s ease forwards';
-                    observer.unobserve(entry.target);
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        // Add slide-up animation keyframe
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Observe all service cards and why items
-        document.querySelectorAll('.service-card, .why-item').forEach(element => {
-            element.style.opacity = '0';
-            observer.observe(element);
+        document.querySelectorAll('[class*="animate-"]').forEach(el => {
+            observer.observe(el);
         });
 
-        // ==================== INITIALIZE ==================== //
-        document.addEventListener('DOMContentLoaded', updatePageContent);
-
-        // Log successful load
-        console.log('✓ CSC Premium Homepage Loaded Successfully');
-        console.log('Owner:', cscConfig.ownerName);
-        console.log('CSC ID:', cscConfig.cscId);
-        console.log('Shop:', cscConfig.shopName);
+        // Add scroll animation on page load
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '1';
+        });
     </script>
 </body>
 </html>
